@@ -71,6 +71,16 @@ Permissions are stored as a single integer, where each bit represents a specific
 
 ---
 
+## 📂 Project Structure
+* 📁 **KarateClub_PL**: Windows Forms and UI components.
+* 📁 **KarateClub_BL**: Business Logic Layer (Entities & Rules).
+* 📁 **KarateClub_DAL**: Data Access Layer (ADO.NET & SQL Mapping).
+* 📁 **Database**: 
+    * `KarateClubDB.sql`: Full script to generate tables, constraints, and relationships.
+    * `StoredProcedures.sql`: Optimized procedures for all CRUD operations.
+* 📁 **screenshots**: High-quality images of the application.
+
+---
 ## 🚀 How to Run
 1.  Clone the repository.
 2.  Import `KarateClub_DB.sql` into your SQL Server instance.
