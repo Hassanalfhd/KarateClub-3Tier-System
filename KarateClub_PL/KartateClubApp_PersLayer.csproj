@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE19E084-A8E7-426C-81F1-D32A85DC2D8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KartateClubConApp_PersLayer</RootNamespace>
+    <AssemblyName>KartateClubConApp_PersLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BeltRanks\frmAddEditBeltRank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeltRanks\frmAddEditBeltRank.Designer.cs">
+      <DependentUpon>frmAddEditBeltRank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeltRanks\frmBeltRanksList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeltRanks\frmBeltRanksList.Designer.cs">
+      <DependentUpon>frmBeltRanksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeltTests\frmAddEditBeltTests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeltTests\frmAddEditBeltTests.Designer.cs">
+      <DependentUpon>frmAddEditBeltTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeltTests\frmBeltTestsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeltTests\frmBeltTestsList.Designer.cs">
+      <DependentUpon>frmBeltTestsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\frmAddEditPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\frmAddEditPayments.Designer.cs">
+      <DependentUpon>frmAddEditPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\frmPaymentsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\frmPaymentsList.Designer.cs">
+      <DependentUpon>frmPaymentsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberInstructors\frmAddEditMemberInstructors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInstructors\frmAddEditMemberInstructors.Designer.cs">
+      <DependentUpon>frmAddEditMemberInstructors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberInstructors\frmMemberInstructorsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInstructors\frmMemberInstructorsList.Designer.cs">
+      <DependentUpon>frmMemberInstructorsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SubscriptionPeriods\frmAddEditPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubscriptionPeriods\frmAddEditPeriod.Designer.cs">
+      <DependentUpon>frmAddEditPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubscriptionPeriods\frmPeriodMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubscriptionPeriods\frmPeriodMain.Designer.cs">
+      <DependentUpon>frmPeriodMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAccessDenied.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAccessDenied.Designer.cs">
+      <DependentUpon>frmAccessDenied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmPermissions.Designer.cs">
+      <DependentUpon>frmPermissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmPermissionTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmPermissionTo.Designer.cs">
+      <DependentUpon>frmPermissionTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUsersList.Designer.cs">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\frmAddEditInstructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmAddEditInstructor.Designer.cs">
+      <DependentUpon>frmAddEditInstructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructors\frmInstructorsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructors\frmInstructorsList.Designer.cs">
+      <DependentUpon>frmInstructorsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\frmAddEditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\frmAddEditMember.Designer.cs">
+      <DependentUpon>frmAddEditMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\frmMemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\frmMemberList.Designer.cs">
+      <DependentUpon>frmMemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BeltRanks\frmAddEditBeltRank.resx">
+      <DependentUpon>frmAddEditBeltRank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeltRanks\frmBeltRanksList.resx">
+      <DependentUpon>frmBeltRanksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeltTests\frmAddEditBeltTests.resx">
+      <DependentUpon>frmAddEditBeltTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeltTests\frmBeltTestsList.resx">
+      <DependentUpon>frmBeltTestsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\frmAddEditPayments.resx">
+      <DependentUpon>frmAddEditPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\frmPaymentsList.resx">
+      <DependentUpon>frmPaymentsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInstructors\frmAddEditMemberInstructors.resx">
+      <DependentUpon>frmAddEditMemberInstructors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInstructors\frmMemberInstructorsList.resx">
+      <DependentUpon>frmMemberInstructorsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubscriptionPeriods\frmAddEditPeriod.resx">
+      <DependentUpon>frmAddEditPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubscriptionPeriods\frmPeriodMain.resx">
+      <DependentUpon>frmPeriodMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAccessDenied.resx">
+      <DependentUpon>frmAccessDenied.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmPermissions.resx">
+      <DependentUpon>frmPermissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmPermissionTo.resx">
+      <DependentUpon>frmPermissionTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUsersList.resx">
+      <DependentUpon>frmUsersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmAddEditInstructor.resx">
+      <DependentUpon>frmAddEditInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructors\frmInstructorsList.resx">
+      <DependentUpon>frmInstructorsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\frmAddEditMember.resx">
+      <DependentUpon>frmAddEditMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\frmMemberList.resx">
+      <DependentUpon>frmMemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karate4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\martial-arts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BelteRanks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subscription Periods.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BeltTests.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drop-down-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refrash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Belts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karate1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femenine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-belt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\debit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exclamation-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5982925_35296-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8463908-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KarateClub_BL\KartateClubBussnessLayer.csproj">
+      <Project>{77c2af16-c77c-403e-8f0b-0921c5657a15}</Project>
+      <Name>KartateClubBussnessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

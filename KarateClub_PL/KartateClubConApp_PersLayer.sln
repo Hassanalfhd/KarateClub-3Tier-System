@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartateClubApp_PersLayer", "KartateClubApp_PersLayer.csproj", "{EE19E084-A8E7-426C-81F1-D32A85DC2D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartateClubBussnessLayer", "..\KarateClub_BL\KartateClubBussnessLayer.csproj", "{77C2AF16-C77C-403E-8F0B-0921C5657A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KartateClubDataAccessLayer", "..\KarateClub_DAL\KartateClubDataAccessLayer.csproj", "{14FA29DA-E552-49BB-9094-A9E356B50104}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE19E084-A8E7-426C-81F1-D32A85DC2D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE19E084-A8E7-426C-81F1-D32A85DC2D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE19E084-A8E7-426C-81F1-D32A85DC2D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE19E084-A8E7-426C-81F1-D32A85DC2D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C2AF16-C77C-403E-8F0B-0921C5657A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C2AF16-C77C-403E-8F0B-0921C5657A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C2AF16-C77C-403E-8F0B-0921C5657A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C2AF16-C77C-403E-8F0B-0921C5657A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FA29DA-E552-49BB-9094-A9E356B50104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FA29DA-E552-49BB-9094-A9E356B50104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FA29DA-E552-49BB-9094-A9E356B50104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FA29DA-E552-49BB-9094-A9E356B50104}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
