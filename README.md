@@ -33,8 +33,8 @@ Permissions are stored as a single integer, where each bit represents a specific
 ### 🔐 Authentication & Security
 | Login Screen | Advanced Permission Management |
 |:---:|:---:|
-| ![Login](screenshots/Login.png) | ![Permissions](screenshots/AddEditUserPermissions.png) |
-
+| ![Login](./screenshots/Login.png) | ![Permissions](./screenshots/AddEditUserPermissions.png) |
+![Login](https://github.com/Hassanalfhd/KarateClub-3Tier-System/blob/main/screenshots/Login.png?raw=true)
 ### 🥋 Core Club Management
 | Members Directory | Instructors | Belt Ranks |
 |:---:|:---:|:---:|
