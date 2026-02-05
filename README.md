@@ -88,4 +88,4 @@ Permissions are stored as a single integer, where each bit represents a specific
 4.  Build and Run using Visual Studio.
 
 ---
-**Developed by [Your Name]** *Focused on Clean Code, OOP, and Scalable Design.*
+**Developed by [Hasan Ameen Al-fahd]** *Focused on Clean Code, OOP, and Scalable Design.*
